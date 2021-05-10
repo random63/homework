@@ -9,7 +9,7 @@ alert(str)
 console.log(str, typeof str)
 console.log('-----------------------------------------------------');*/
 
-                         alert('**** Задача №8 ****');
+/*                         alert('**** Задача №8 ****');
 //Создайте переменную str и присвойте ей значение 'abcde'. Обращаясь к отдельным 
 //символам этой строки выведите на экран символ 'a', символ 'b', символ 'e'
 let str = "abcde";
@@ -26,23 +26,7 @@ for(let i = 0; i < 5; i++) {
   }   
 }
 alert(`"${str1}" Поздравляем! Получилось)`); 
-
-
-
-// let indexSimbol = +prompt(`Введите индекс от 0 до 4:`);
-// let i;
-// let str1="";
-
-// if(str[indexSimbol]!="a") {
-//      console.log(str[indexSimbol]); 
-//     alert(`Нужно ввести другой индекс: `);
-//     indexSimbol;
-// }
-// else {
-//   alert(str1+'a');
-// }
-
-console.log('----------------------------------------------------');
+console.log('----------------------------------------------------');*/
 
 /*
                             alert('**** Задача №09 ****');
@@ -325,7 +309,37 @@ console.log('**** Задача №22****');
 //экран следующие значения (каждое – в отдельной строке): сколько секунд прошло с 
 //полуночи да «данного момента» и сколько минут прошло за это же время, а также сколько 
 //минут осталось до полуночи.
+let hour, min, currentTime; 
+let intervalSec, intervalMin, intervalMin1;
+let flag;
+while (!flag) {
+  hour = +prompt("Укажите час: ");
+  if(hour > 24 || hour == "" || isNaN(+hour)) {
+     alert(`Вы что-то перепутали, введя ${hour}`);
+  }
+  else {
+    alert("Далее")
+    break;
+  }
+}
+while (!flag) {
+  min = +prompt("Укажите мин: ");
+  if(min > 60 || min == "" || isNaN(+min)) {
+     alert(`Вы что-то перепутали, введя ${min}`);
+  }
+  else {
+    currentTime = hour + "ч." + min + "мин.";
+    alert(`${currentTime} - введенное вами время`)
+    break;
+  }
+}
+intervalSec= hour*60*60 + min*60;
+intervalMin = intervalSec / 60;
+intervalMin1 = (24 * 60) - (hour * 60 + min);
+alert(`1) ${intervalSec} секунд и ${intervalMin} минут прошло с полуночи до ${currentTime}\n2) ${intervalMin1} минут осталось до конца этого дня`);
 
+
+console.log("------------------------------------------------------");
 
 
 
@@ -378,5 +392,3 @@ else {
 //     isNaN(+number) ? alert("Это не число!") : alert(`Число ${number} в степени 3 = ${number**3}`);
 //   }
 // }
-
-

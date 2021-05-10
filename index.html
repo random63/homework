@@ -686,16 +686,46 @@
                       }                      
                     }
                 </script>
+
                 <p id="22">
-                <strong>Задание 22.</strong>
-                
+                  <strong>Задание 22.</strong>
+                  Напишите программу, которая принимает с клавиатуры два числа, образующих ответ на вопрос «который час?» (первое – часы, второе минуты, например, 15 и 42) и выводит на экран следующие значения (каждое – в отдельной строке): сколько секунд прошло с полуночи да «данного момента» и сколько минут прошло за это же время, а также сколько минут осталось до полуночи.
                 </p>
+
                 <button class="btn" id="my-btn22">Ответ</button>
                 <script>                    
                   const $btn22 = document.querySelector('#my-btn22');
                   $btn22.onclick = function () {
-                    
-                  }
+                    let hour, min, currentTime; 
+                    let intervalSec, intervalMin, intervalMin1;
+                    let flag;
+                    while (!flag) {
+                      hour = +prompt("Укажите час: ");
+                      if(hour > 24 || hour == "" || isNaN(+hour)) {
+                         alert(`Вы что-то перепутали, введя ${hour}`);
+                      }
+                      else {
+                        alert("Далее")
+                        break;
+                      }
+                    }
+                    while (!flag) {
+  min = +prompt("Укажите мин: ");
+  if(min > 60 || min == "" || isNaN(+min)) {
+     alert(`Вы что-то перепутали, введя ${min}`);
+  }
+  else {
+    currentTime = hour + "ч." + min + "мин.";
+    alert(`${currentTime} - введенное вами время`)
+    break;
+  }
+}
+                    intervalSec= hour*60*60 + min*60;
+                    intervalMin = intervalSec / 60;
+                    intervalMin1 = (24 * 60) - (hour * 60 + min);
+                    alert(`1) ${intervalSec} секунд и ${intervalMin} минут прошло с полуночи до ${currentTime}                   \n2) ${intervalMin1} минут осталось до конца этого дня`);
+
+                                      }
                 </script>
                 <p id="23">
                   <strong>Задание 23.</strong>
