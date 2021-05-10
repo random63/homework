@@ -1,0 +1,77 @@
+.row div {
+    min-height: 100px;
+}
+
+.block-1 {
+    background-color: rgb(212, 206, 206);
+}
+
+.block-2 {
+    background-color: rgb(179, 172, 135);
+}
+h1 {
+    position: relative;
+    margin-bottom: .5rem;
+    text-align: center;
+  }
+p  {
+    font-size: 16px;
+    position: relative;
+    margin-bottom: .5rem;
+    text-align: left;
+  }
+span {
+
+  
+  }
+   .btn {
+    display: inline-block;
+    
+    position: relative;
+    margin-right: 0;
+    padding: 04px 20px;
+    
+    font-family: 'Ubuntu', 'Verdana', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF; 
+    
+    border-radius: 80px;
+    
+    background-color: #EF5E42;
+  } 
+  
+   .btn:hover {
+    color: #FFFFFF; 
+    background-color: #ef8042;
+  }
+  
+  .btn:active {
+    background-color: #B54029;
+  } 
+
+
+/* на xs */
+h1 {
+    font-size: 18px;
+  }
+  /* на sm */
+  @media (min-width: 768px) {
+    html {
+      font-size: 20px;
+    }
+  }
+  /* на md */
+  @media (min-width: 992px) {
+    html {
+      font-size: 22px;
+    }
+  }
+  /* на lg */
+  @media (min-width: 1200px) {
+    html {
+      font-size: 24px;
+    }
+  }
