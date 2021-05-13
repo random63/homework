@@ -17,13 +17,12 @@ h1 {
 p  {
     font-size: 16px;
     position: relative;
-    margin-bottom: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
     text-align: left;
   }
-span {
 
-  
-  }
+
    .btn {
     display: inline-block;
     
