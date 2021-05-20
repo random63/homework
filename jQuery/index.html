@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Модальное окно DEMO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <h1>Создание модального окна с помощью библиотеки jQuery</h1>
+
+<!-- Контейнер для вызова модального окна по кнопке -->
+    <div class="btn_group">
+      <a href="#" onclick="bopen();"><span class="btn_close border_radius_class">Вызвать модальное окно</span></a> <br>      
+    </div>
+
+    <div id="popup_window" style="display: none;">
+      <div class="popup_window border_radius_class">
+        <div>
+          <h3>jQuery jQuery jQuery jQuery jQuery </h3>
+        </div>
+
+        <div id="vk_groups_popup"></div>
+
+        <a href="#" onclick="bclose();">
+          <span class="btn_close border_radius_class">
+            закрыть
+          </span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </body>
+
+  
+  <script src="js/jquery-min.js"></script>
+  <script src="js/jquery.bpopup.min.js"></script>
+  <script src="js/script.js"></script>
+
+</html>
+
+<!-- файл CSS:
+
+a{
+	color: white;
+}
+
+.popup_window {
+	border: solid 1px black;
+	padding: 10px;
+	background-color: white;
+	width:100%;
+	margin-top:15%;
+}
+
+.border_radius_class {
+	border-radius: 10px;  
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;  
+}
+
+.btn_close {
+    padding: 3%;
+    background-color: rgb(249, 72, 11);
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+}
+
+.btn_group {
+	width: 30%;
+}
+
+#vk_groups_popup {
+	margin: 0 auto;
+} -->
+
+
+

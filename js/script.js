@@ -970,11 +970,9 @@ console.log(symbol);
 let str = symbol;
 for(let i = 0; i < count; i++) {
   mas.push('-' +str);
-  str += symbol
+  str += symbol;
 }
 alert(mas);
-
-
 console.log("------------------------------------------------------"); 
 }
 
